@@ -6,6 +6,12 @@ export default function Header() {
   return (
     <Headerbox>
         <Logo src={require("../../images/logo.svg").default}/>
+        <a href="../screens/Home.js">Home</a>
+        <a href="../screens/About.js">About</a>
+        <a href="../screens/Youtube.js">Youtube</a>
+        <a href="../screens/ToDo.js">Todo</a>
+        <a href="../screens/Users.js">Users</a>
+        <a href="../screens/Contact.js">Contact</a>
         <Login>Login</Login>
     </Headerbox>
   )
