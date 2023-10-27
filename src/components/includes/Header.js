@@ -6,12 +6,12 @@ export default function Header() {
   return (
     <Headerbox>
         <Logo src={require("../../images/logo.svg").default}/>
-        <a href="../screens/Home.js">Home</a>
-        <a href="../screens/About.js">About</a>
-        <a href="../screens/Youtube.js">Youtube</a>
-        <a href="../screens/ToDo.js">Todo</a>
-        <a href="../screens/Users.js">Users</a>
-        <a href="../screens/Contact.js">Contact</a>
+        <Login href="">Home</Login>
+        <Login href="">About</Login>
+        <Logi href="">Youtube</Logi>
+        <Login href="">Todo</Login>
+        <Login href="">Users</Login>
+        <Logi href="">Contact</Logi>
         <Login>Login</Login>
     </Headerbox>
   )
@@ -24,17 +24,34 @@ const Headerbox = styled.header`
   display: flex;
 `;
 const Logo = styled.img`
-  margin-right: 999px;
+  margin-right: 99px;
 `;
-const Login = styled.button`
+const Login = styled.a`
   height: 47px;
   width: 131px;
-  font-size: 19px;
+  font-size: 29px;
   margin-top: 23px;
   border: none;
   background: #00f;
   color: #fff;
   font-weight: bold;
   border-radius: 7px;
+  margin-right: 27px;
+  padding-left: 27px;
+  text-decoration: none;
+`;
+const Logi = styled.a`
+  height: 47px;
+  width: 131px;
+  font-size: 29px;
+  margin-top: 23px;
+  border: none;
+  background: #00f;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 7px;
+  margin-right: 27px;
+  padding-left: 17px;
+  text-decoration: none;
 `;
 
