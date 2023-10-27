@@ -20,9 +20,9 @@ class App extends Component {
                 <Router>
                     <Header />
                     <Routes>
-                        <Route path="/" element={<Home/>}>
+                        <Route path="/" element={<Youtube/>}>
                         </Route>
-                        <Route path="youtube" element={<Youtube/>}>
+                        <Route path="home" element={<Home/>}>
                         </Route>
                         <Route path="hello" element={<HelloWould/>}>
                         </Route>
